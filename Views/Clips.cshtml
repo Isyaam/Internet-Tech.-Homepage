@@ -1,0 +1,20 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Clips>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+    
+<!--ToDo Embedding Twitch in my Website https://dev.twitch.tv/docs/embed-->
+    <div class="container contentBox">
+        @Html.Partial("header")
+        <hr>
+        <h1>hat noch keinen fertigen Inhalt</h1>
+        <!--eingebundener Clip als test-->
+        <iframe
+            src="https://clips.twitch.tv/embed?clip=IncredulousAbstemiousFennelImGlitch&parent=localhost"
+            height="<height>"
+            width="<width>"
+            allowfullscreen="<allow full screen>">
+        </iframe>
+    </div>
+

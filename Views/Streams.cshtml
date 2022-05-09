@@ -1,0 +1,23 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Streams>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+	
+
+}
+    <!--LatestVideo Macro wird aufgerufen mit wie viel Content pro Seite und dem Startknoten-->
+    <div class="container contentBox">
+        @Html.Partial("header")
+        <hr>
+        @Umbraco.RenderMacro("LatestVideo",
+        new
+            {
+                numberOfVideos = Model.HowManyVideosShouldBeShown,
+                startNodeId = Model.Id
+            })
+        @{
+        }
+    </div>
+
+
+

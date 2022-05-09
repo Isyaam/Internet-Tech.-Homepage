@@ -1,0 +1,18 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Podcast>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+    <!--LatestAudio Macro wird aufgerufen mit wie viel Content pro Seite und dem Startknoten-->
+    <div class="container contentBox">
+        @Html.Partial("header")
+        <hr>
+        @Umbraco.RenderMacro("LatestAudio",
+        new
+            {
+                numberOfAudios = Model.HowManyAudiosShouldBeShown,
+                startNodeId = Model.Id
+            })
+        @{
+        }
+    </div>

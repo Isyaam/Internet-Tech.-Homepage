@@ -1,0 +1,97 @@
+﻿@using ContentModels = Umbraco.Web.PublishedModels;
+@using Umbraco.Web;
+@inherits Umbraco.Web.Macros.PartialViewMacroPage
+@{
+    var startNodeId = Model.MacroParameters["startNodeId"] != null ? Model.MacroParameters["startNodeId"] : Model.Content.Id;
+
+
+    var numberOfVideos=0;
+    if (Model.MacroParameters["numberOfVideos"] != null)
+    {
+        int.TryParse((string)Model.MacroParameters["numberOfVideos"], out numberOfVideos);
+    }
+
+
+}
+@if (startNodeId != null)
+{
+    <!--Startknoten -->
+    var startNode = Umbraco.Content(startNodeId);
+    
+    <!--Anzahl der Elemente zum berechnen der Seiten
+    und Anordnung von hinten nach vorne (Neu zu Alt)-->
+    var elements = startNode.Children.OrderByDescending(x => x.CreateDate).ToList();
+    var pageCount = (int)Math.Ceiling((double)elements.Count / (double)numberOfVideos);
+    
+    <!--Parsen,wenn Seitenanzahl kleiner 0 oder größer als der Seitenzähler dann Page auf 1 setzen-->
+    var page = 1;
+    if (!string.IsNullOrEmpty(Request.QueryString["page"]))
+    {
+        int.TryParse(Request.QueryString["page"], out page);
+        if (page <= 0 || page > pageCount)
+        {
+            page = 1;
+        }
+    }
+    
+    
+    <!--Anzeigen der Videoelementen von Streams-->
+    var streamElements = elements.Skip((page - 1) * numberOfVideos).Take(numberOfVideos).ToList();
+
+    if (streamElements.Count > 0)
+    {
+        <div class="row align-content-center">
+            @foreach (ContentModels.Video video in streamElements)
+            {
+                <a href="@video.Url">
+                    <div class="col">
+                            <img src="@video.Thumbnail.Url" width="350px">
+                            <h5 class="text-center text-dark text-truncate">@video.Name</h5>
+                    </div>
+                </a>
+            }
+       </div>
+    }
+    
+    <!--Erstellen der Navigation zum Seitenwechsel-->
+    if (elements.Count > numberOfVideos)
+    {
+        <div class="pagination justify-content-center">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <ul class="navbar-nav mr-auto">
+                    @if (page <= 1)
+                    {
+                        <li class="nav-item ">
+                        <span class="nav-link nav-link--black nav-link--disabled"> < </span>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                        <a class="nav-link nav-link--black" href="@(Model.Content.Url + "?page=" + (page - 1))"> < </a>
+                        </li>
+                    }
+    
+                    @for (int i = 1; i <= pageCount; i++)
+                    {
+                        <li class="nav-item">
+                        <a class="nav-link nav-link--black @(page == i ? " nav-link--active" : null)" href="@(Model.Content.Url + "?page=" + i)">@i</a>
+                        </li>
+                    }
+                    @if (page == pageCount)
+                    {
+                        <li class="nav-item">
+                        <span class="nav-link nav-link--black nav-link--disabled"> > </span>
+                        </li>
+                    }
+                    else
+                        {   <li class="nav-item">
+                            <a class="nav-link nav-link--black" href="@(Model.Content.Url + "?page=" + (page + 1))"> > </a>
+                            </li>
+                    
+                    }
+                </ul>
+            </nav>
+        </div>
+    }
+}

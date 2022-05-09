@@ -1,0 +1,16 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Newspage>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+    <!--Ausgabe der jeweiligen Neuigkeit mit Name,Thumbnail und RichText-->
+    <div class="container contentBox">
+        @Html.Partial("header")
+        <hr>
+        <div class="row">
+            <div class="col">
+                <img src="@Model.NewsPicture.Url" width="50%">
+                <p>@Model.Content</p>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,89 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Home>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+    <!-- Main Content-->
+    
+    <div class="container contentBox">
+        @Html.Partial("header")
+        <hr>
+        <!--Einbinden eines Streams
+        wenn man einen anderen Stream einbinden möchte einfach bei
+        "channel=" einen anderen Channel-Namen dahinter setzen
+        https://dev.twitch.tv/docs/embed/everything-->
+        @if(Model.Value<bool>("live"))
+        {
+            <h3>LiveStream</h3>
+            <iframe
+                src="https://player.twitch.tv/?channel=name&parent=localhost&autoplay=false"
+                allowfullscreen="true"
+                width="720px"
+                height="480px">
+            </iframe>
+            <hr>
+        }
+
+    
+        <!--Hier wird der NewsContent geladen
+        ToDo in Eine Macro packen bzw. mit anderen Macros zusammenfassen-->
+        <h3>Was gibt es Neues</h3>
+        <div class="row align-content-center">
+            @{
+            	var newsElements = Umbraco.Content(Guid.Parse("dffc7d4c-54ec-4c21-bd27-f948e082e8e3"))
+                .ChildrenOfType("newspage")
+                .Where(x => x.IsVisible())
+                .OrderByDescending(x => x.CreateDate);
+            }
+        
+            @foreach (ContentModels.Newspage newspage in newsElements.Take(3))
+            {
+                <a href="@newspage.Url">
+                    <div class="col">
+                            <img src="@newspage.NewsPicture.Url" width="350px">
+                            <h5 class="text-center text-dark text-truncate">@newspage.Name</h5>
+                    </div>
+                </a>
+            }
+        <!--Hier wird der StreamContent geladen-->
+        </div>
+            @{
+            	var videoElements = Umbraco.Content(Guid.Parse("82b61039-d965-4977-922e-8be87c2950bb"))
+                .ChildrenOfType("video")
+                .Where(x => x.IsVisible())
+                .OrderByDescending(x => x.CreateDate);
+            }
+        <hr>
+        <h3>Die neusten Streams</h3>
+        <div class="row align-content-center">
+        	@foreach (ContentModels.Video video in videoElements.Take(3))
+        	{
+                <a href="@video.Url">
+                    <div class="col">
+                            <img src="@video.Thumbnail.Url" width="350px">
+                            <h5 class="text-center text-dark text-truncate">@video.Name</h5>
+                    </div>
+                </a>
+        	}
+        </div>
+        <hr>
+        <!--Hier wird der AudioContent geladen-->
+        <h3>Die neusten Podcasts</h3>
+        @{
+        	var audioElements = Umbraco.Content(Guid.Parse("7ebf09cc-7a3f-47fa-9e6d-9088d22db06f"))
+            .ChildrenOfType("audioData")
+            .Where(x => x.IsVisible())
+            .OrderByDescending(x => x.CreateDate);
+        }
+        <div class="row align-content-center">
+        	@foreach (ContentModels.AudioData audio in audioElements.Take(3))
+        	{
+        	    <a href="/podcast/">
+                    <div class="col">
+                        <img src="@audio.Thumbnail.Url" width="350px">
+                        <h5 class="text-center text-dark text-truncate">@audio.Name</h5>
+                    </div>
+                </a>
+            }
+        </div>
+    </div>

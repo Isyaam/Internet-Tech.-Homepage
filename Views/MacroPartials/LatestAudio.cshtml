@@ -1,0 +1,106 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+@using ContentModels = Umbraco.Web.PublishedModels;
+@using Umbraco.Web;
+
+@{
+    var startNodeId = Model.MacroParameters["startNodeId"] != null ? Model.MacroParameters["startNodeId"] : Model.Content.Id;
+
+
+    var numberOfAudios=0;
+    if (Model.MacroParameters["numberOfAudios"] != null)
+    {
+        int.TryParse((string)Model.MacroParameters["numberOfAudios"], out numberOfAudios);
+    }
+
+
+}
+@if (startNodeId != null)
+{
+    <!--Startknoten -->
+    var startNode = Umbraco.Content(startNodeId);
+    
+    <!--Anzahl der Elemente zum berechnen der Seiten
+    und Anordnung von hinten nach vorne (Neu zu Alt)-->
+    var elements = startNode.Children
+    .OrderByDescending(x => x.CreateDate)
+    .ToList();
+    
+    var pageCount = (int)Math.Ceiling((double)elements
+    .Count / (double)numberOfAudios);
+    
+    <!--Parsen,wenn Seitenanzahl kleiner 0 oder größer als der Seitenzähler dann Page auf 1 setzen-->
+    var page = 1;
+    if (!string.IsNullOrEmpty(Request.QueryString["page"]))
+    {
+        int.TryParse(Request.QueryString["page"], out page);
+        if (page <= 0 || page > pageCount)
+        {
+            page = 1;
+        }
+    }
+    
+    
+    <!--Anzeigen der Audioelementen von Podcast-->
+    var streamElements = elements.Skip((page - 1) * numberOfAudios).Take(numberOfAudios).ToList();
+
+    if (streamElements.Count > 0)
+    {
+        foreach (ContentModels.AudioData audio in streamElements)
+        {
+            <div class="row align-content-center">
+                <div class="col">
+                    <img src="@audio.Thumbnail.Url" width="50%">
+                    <h3>@audio.Name</h3>
+                    <audio controls width="150%">
+                    <source src="@audio.Data.Url" type="audio/mp3" />
+                    </audio>
+                    <p>@audio.Description</p>
+                </div>
+             </div>
+            
+            <hr>
+        }
+    }
+    
+    <!--Erstellen der Navigation zum Seitenwechsel-->
+    if (elements.Count > numberOfAudios)
+    {
+        <div class="pagination justify-content-center">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <ul class="navbar-nav mr-auto">
+                    @if (page <= 1)
+                    {
+                        <li class="nav-item ">
+                            <span class="nav-link nav-link--black nav-link--disabled"> < </span>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link nav-link--black" href="@(Model.Content.Url + "?page=" + (page - 1))"> < </a>
+                        </li>
+                    }
+    
+                    @for (int i = 1; i <= pageCount; i++)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link nav-link--black @(page == i ? " nav-link--active" : null)" href="@(Model.Content.Url + "?page=" + i)">@i</a>
+                        </li>
+                    }
+                    @if (page == pageCount)
+                    {
+                        <li class="nav-item">
+                            <span class="nav-link nav-link--black nav-link--disabled"> > </span>
+                        </li>
+                    }
+                    else
+                    {   
+                        <li class="nav-item">
+                            <a class="nav-link nav-link--black" href="@(Model.Content.Url + "?page=" + (page + 1))"> > </a>
+                        </li>
+                    }
+                </ul>
+            </nav>
+        </div>
+    }
+}

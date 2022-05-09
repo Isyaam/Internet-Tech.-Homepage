@@ -1,0 +1,86 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Search>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+	
+	/*UrlParam muss Klein geschrieben werden, da der Content über Url gesucht wird.
+	Das macht es leichter, da die Groß und Kleinschreibung nicht beachtet werden muss 
+	und füllt Leerzeichen mit einem "-".
+	Es werden nur Videos und News gesucht!*/
+	var urlParam = HttpContext
+	    .Current.Request.QueryString["search"]
+	    .ToLower().Replace(" ","-");
+	
+	var text = HttpContext.Current.Request
+	    .QueryString["search"];
+	
+	var searchVideo = Umbraco
+	    .Content(Guid.Parse("82b61039-d965-4977-922e-8be87c2950bb"))
+        .ChildrenOfType("video")
+        .Where(x => (x.Url.Contains(@urlParam)))
+        .OrderByDescending(x => x.CreateDate).ToList();
+        
+    var searchNews = Umbraco
+        .Content(Guid.Parse("dffc7d4c-54ec-4c21-bd27-f948e082e8e3"))
+        .ChildrenOfType("newspage")
+        .Where(x => x.Url.Contains(@urlParam))
+        .Where(x => x.IsVisible())
+        .OrderByDescending(x => x.CreateDate).ToList();
+}
+    <div class="container contentBox">
+        <h1>Suche nach @text</h1>
+        <hr>
+        <form class="form-inline" action="/search/"@Model.Url() input method="get">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="search">
+        </form>
+        <!--Wenn Parameter Leer ist soll Fehler ausgeworfen werden.
+        Wenn Parameter keinen Treffer hat soll Fehler ausgeworfen werden.
+        Ansonsten gib Treffer aus 
+        ToDO Filter bauen wenn man nur Videos oder News haben will-->
+        @if (urlParam == "")
+        {
+            <p class="text-danger">Bitte geben Sie was in die Suche ein</p>
+        }
+        @if (searchNews.Count == 0 && searchVideo.Count == 0)
+        {
+            <p class="text-danger">Kein Treffer für: @text</p>
+        }
+        @if (urlParam != "" && searchNews.Count > 0)
+        {  
+        <hr>
+        <h3>News</h3>
+        <div class="row align-content-center">
+        	@foreach (ContentModels.Newspage newspage in searchNews)
+            {
+                <a href="@newspage.Url">
+                    <div class="col">
+                            <img src="@newspage.NewsPicture.Url" width="350px">
+                            <h5 class="text-center text-dark text-truncate">@newspage.Name</h5>
+                    </div>
+                </a>
+            }
+        </div>
+        }
+        @if (urlParam != "" && searchVideo.Count > 0)
+        { 
+            <hr>
+            <h3>Streams</h3>
+            <div class="row align-content-center">
+            	@foreach (ContentModels.Video video in searchVideo)
+            	{
+                	<a href="@video.Url">
+                        <div class="col">
+                                <img src="@video.Thumbnail.Url" width="350px">
+                                <h5 class="text-center text-dark text-truncate">@video.Name</h5>
+                        </div>
+                    </a>
+            	}
+            </div>
+        }
+    </div>
+}
+    
+
+
+    
+

@@ -1,0 +1,40 @@
+/*Hintergrund der Homepage*/
+body{
+    background: radial-gradient(circle at 60px 60px, #e1eaec 40%,#79bfe5 100%);
+}
+
+/*Footer etwas vergrößert*/
+footer{
+    height: 100px;
+}
+
+/*Audio vergrößert sodass man besser Vor- bzw Zurückspulen kann*/
+audio { 
+    width: 600px; 
+}
+/*Header Text etwas nach unten verschoben fuer mehr abstand*/
+h1{
+    margin-top:10px;
+}
+/*h3 wird nur für Ueberschriften in Home verwendet.
+für etwas mehr Abstand von anderen Sectionen*/
+h3{
+    margin-top:20px;
+    word-break: break-all;
+}
+/*Das der Text von den einzelnen Weiterleitungen nicht zu lang werden kann*/
+h5{
+    max-width: 350px;
+}
+/*so das Rich Text nicht länger wird als der Body*/
+p{
+    word-break: break-all;
+}
+
+/*CSS für den Container in dem der Content enthalten ist*/
+.contentBox{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color:#fdfdfd;
+    box-shadow: 0 0 5px #888;
+}

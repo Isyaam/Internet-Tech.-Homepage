@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<map>
+  <item key="L3VtYnJhY28vYXNzZXRzL2Nzcy91bWJyYWNvLmNzczsvdW1icmFjby9saWIvYm9vdHN0cmFwLXNvY2lhbC9ib290c3RyYXAtc29jaWFsLmNzczsvdW1icmFjby9saWIvZm9udC1hd2Vzb21lL2Nzcy9mb250LWF3ZXNvbWUubWluLmNzczs" file="c:\Users\punki\Desktop\Umbraco Website\App_Data\TEMP\ClientDependency\1_03a508c355324bf4844c0e3b6b1a9d62.cdC" compression="gzip" version="1">
+    <files>
+      <file name="/umbraco/assets/css/umbraco.css" />
+      <file name="/umbraco/lib/bootstrap-social/bootstrap-social.css" />
+      <file name="/umbraco/lib/font-awesome/css/font-awesome.min.css" />
+    </files>
+  </item>
+  <item key="L3VtYnJhY28vbGliL2pxdWVyeS9qcXVlcnkubWluLmpzOy91bWJyYWNvL2xpYi9qcXVlcnktdWkvanF1ZXJ5LXVpLm1pbi5qczsvdW1icmFjby9saWIvanF1ZXJ5LXVpLXRvdWNoLXB1bmNoL2pxdWVyeS51aS50b3VjaC1wdW5jaC5taW4uanM7L3VtYnJhY28vbGliL2FuZ3VsYXIvYW5ndWxhci5qczsvdW1icmFjby9saWIvdW5kZXJzY29yZS91bmRlcnNjb3JlLW1pbi5qczsvdW1icmFjby9saWIvbW9tZW50L21vbWVudC5taW4uanM7L3VtYnJhY28vbGliL2ZsYXRwaWNrci9mbGF0cGlja3IuanM7L3VtYnJhY28vbGliL2FuaW1lanMvYW5pbWUubWluLmpzOy91bWJyYWNvL2xpYi9hbmd1bGFyLXJvdXRlL2FuZ3VsYXItcm91dGUuanM7L3VtYnJhY28vbGliL2FuZ3VsYXItY29va2llcy9hbmd1bGFyLWNvb2tpZXMuanM7L3VtYnJhY28vbGliL2FuZ3VsYXItYXJpYS9hbmd1bGFyLWFyaWEubWluLmpzOy91bWJyYWNvL2xpYi9hbmd1bGFyLXRvdWNoL2FuZ3VsYXItdG91Y2guanM7L3VtYnJhY28vbGliL2FuZ3VsYXItc2FuaXRpemUvYW5ndWxhci1zYW5pdGl6ZS5qczsvdW1icmFjby9saWIvYW5ndWxhci1hbmltYXRlL2FuZ3VsYXItYW5pbWF0ZS5qczsvdW1icmFjby9saWIvYW5ndWxhci1tZXNzYWdlcy9hbmd1bGFyLW1lc3NhZ2VzLmpzOy91bWJyYWNvL2xpYi9hbmd1bGFyLXVpLXNvcnRhYmxlL3NvcnRhYmxlLmpzOy91bWJyYWNvL2xpYi9hbmd1bGFyLWR5bmFtaWMtbG9jYWxlL3RtaER5bmFtaWNMb2NhbGUubWluLmpzOy91bWJyYWNvL2xpYi9uZy1maWxlLXVwbG9hZC9uZy1maWxlLXVwbG9hZC5taW4uanM7L3VtYnJhY28vbGliL2FuZ3VsYXItbG9jYWwtc3RvcmFnZS9hbmd1bGFyLWxvY2FsLXN0b3JhZ2UubWluLmpzOy91bWJyYWNvL2xpYi9jaGFydC5qcy9jaGFydC5taW4uanM7L3VtYnJhY28vbGliL2FuZ3VsYXItY2hhcnQuanMvYW5ndWxhci1jaGFydC5taW4uanM7L3VtYnJhY28vbGliL3dpY2ctaW5lcnQvZGlzdC9pbmVydC5taW4uanM7L3VtYnJhY28vbGliL3VtYnJhY28vRXh0ZW5zaW9ucy5qczsvdW1icmFjby9saWIvdW1icmFjby9OYW1lc3BhY2VNYW5hZ2VyLmpzOy91bWJyYWNvL2xpYi91bWJyYWNvL0xlZ2FjeVNwZWVjaEJ1YmJsZS5qczsvdW1icmFjby9qcy91dGlsaXRpZXMuanM7L3VtYnJhY28vanMvYXBwLmpzOy91bWJyYWNvL2pzL3VtYnJhY28ucmVzb3VyY2VzLmpzOy91bWJyYWNvL2pzL3VtYnJhY28uZGlyZWN0aXZlcy5qczsvdW1icmFjby9qcy91bWJyYWNvLmZpbHRlcnMuanM7L3VtYnJhY28vanMvdW1icmFjby5zZXJ2aWNlcy5qczsvdW1icmFjby9qcy91bWJyYWNvLmludGVyY2VwdG9ycy5qczsvdW1icmFjby9qcy91bWJyYWNvLmNvbnRyb2xsZXJzLmpzOy91bWJyYWNvL2pzL3JvdXRlcy5qczsvdW1icmFjby9qcy9pbml0LmpzOw" file="c:\Users\punki\Desktop\Umbraco Website\App_Data\TEMP\ClientDependency\1_d4b8b620948a458d8bccda402ce12ea6.cdJ" compression="gzip" version="1">
+    <files>
+      <file name="/umbraco/lib/jquery/jquery.min.js" />
+      <file name="/umbraco/lib/jquery-ui/jquery-ui.min.js" />
+      <file name="/umbraco/lib/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js" />
+      <file name="/umbraco/lib/angular/angular.js" />
+      <file name="/umbraco/lib/underscore/underscore-min.js" />
+      <file name="/umbraco/lib/moment/moment.min.js" />
+      <file name="/umbraco/lib/flatpickr/flatpickr.js" />
+      <file name="/umbraco/lib/animejs/anime.min.js" />
+      <file name="/umbraco/lib/angular-route/angular-route.js" />
+      <file name="/umbraco/lib/angular-cookies/angular-cookies.js" />
+      <file name="/umbraco/lib/angular-aria/angular-aria.min.js" />
+      <file name="/umbraco/lib/angular-touch/angular-touch.js" />
+      <file name="/umbraco/lib/angular-sanitize/angular-sanitize.js" />
+      <file name="/umbraco/lib/angular-animate/angular-animate.js" />
+      <file name="/umbraco/lib/angular-messages/angular-messages.js" />
+      <file name="/umbraco/lib/angular-ui-sortable/sortable.js" />
+      <file name="/umbraco/lib/angular-dynamic-locale/tmhDynamicLocale.min.js" />
+      <file name="/umbraco/lib/ng-file-upload/ng-file-upload.min.js" />
+      <file name="/umbraco/lib/angular-local-storage/angular-local-storage.min.js" />
+      <file name="/umbraco/lib/chart.js/chart.min.js" />
+      <file name="/umbraco/lib/angular-chart.js/angular-chart.min.js" />
+      <file name="/umbraco/lib/wicg-inert/dist/inert.min.js" />
+      <file name="/umbraco/lib/umbraco/Extensions.js" />
+      <file name="/umbraco/lib/umbraco/NamespaceManager.js" />
+      <file name="/umbraco/lib/umbraco/LegacySpeechBubble.js" />
+      <file name="/umbraco/js/utilities.js" />
+      <file name="/umbraco/js/app.js" />
+      <file name="/umbraco/js/umbraco.resources.js" />
+      <file name="/umbraco/js/umbraco.directives.js" />
+      <file name="/umbraco/js/umbraco.filters.js" />
+      <file name="/umbraco/js/umbraco.services.js" />
+      <file name="/umbraco/js/umbraco.interceptors.js" />
+      <file name="/umbraco/js/umbraco.controllers.js" />
+      <file name="/umbraco/js/routes.js" />
+      <file name="/umbraco/js/init.js" />
+    </files>
+  </item>
+  <item key="L3VtYnJhY28vbGliL3RpbnltY2UvdGlueW1jZS5taW4uanM7L3VtYnJhY28vbGliL3RpbnltY2UvcGx1Z2lucy9wYXN0ZS9wbHVnaW4ubWluLmpzOy91bWJyYWNvL2xpYi90aW55bWNlL3BsdWdpbnMvYW5jaG9yL3BsdWdpbi5taW4uanM7L3VtYnJhY28vbGliL3RpbnltY2UvcGx1Z2lucy9jaGFybWFwL3BsdWdpbi5taW4uanM7L3VtYnJhY28vbGliL3RpbnltY2UvcGx1Z2lucy90YWJsZS9wbHVnaW4ubWluLmpzOy91bWJyYWNvL2xpYi90aW55bWNlL3BsdWdpbnMvbGlzdHMvcGx1Z2luLm1pbi5qczsvdW1icmFjby9saWIvdGlueW1jZS9wbHVnaW5zL2Fkdmxpc3QvcGx1Z2luLm1pbi5qczsvdW1icmFjby9saWIvdGlueW1jZS9wbHVnaW5zL2hyL3BsdWdpbi5taW4uanM7L3VtYnJhY28vbGliL3RpbnltY2UvcGx1Z2lucy9hdXRvbGluay9wbHVnaW4ubWluLmpzOy91bWJyYWNvL2xpYi90aW55bWNlL3BsdWdpbnMvZGlyZWN0aW9uYWxpdHkvcGx1Z2luLm1pbi5qczsvdW1icmFjby9saWIvdGlueW1jZS9wbHVnaW5zL3RhYmZvY3VzL3BsdWdpbi5taW4uanM7L3VtYnJhY28vbGliL3RpbnltY2UvcGx1Z2lucy9zZWFyY2hyZXBsYWNlL3BsdWdpbi5taW4uanM7L3VtYnJhY28vbGliL3RpbnltY2UvcGx1Z2lucy9mdWxsc2NyZWVuL3BsdWdpbi5taW4uanM7L3VtYnJhY28vbGliL3RpbnltY2UvcGx1Z2lucy9ub25lZGl0YWJsZS9wbHVnaW4ubWluLmpzOw" file="c:\Users\punki\Desktop\Umbraco Website\App_Data\TEMP\ClientDependency\1_5cc02134773d45fba7c625a9a9175610.cdJ" compression="gzip" version="1">
+    <files>
+      <file name="/umbraco/lib/tinymce/tinymce.min.js" />
+      <file name="/umbraco/lib/tinymce/plugins/paste/plugin.min.js" />
+      <file name="/umbraco/lib/tinymce/plugins/anchor/plugin.min.js" />
+      <file name="/umbraco/lib/tinymce/plugins/charmap/plugin.min.js" />
+      <file name="/umbraco/lib/tinymce/plugins/table/plugin.min.js" />
+      <file name="/umbraco/lib/tinymce/plugins/lists/plugin.min.js" />
+      <file name="/umbraco/lib/tinymce/plugins/advlist/plugin.min.js" />
+      <file name="/umbraco/lib/tinymce/plugins/hr/plugin.min.js" />
+      <file name="/umbraco/lib/tinymce/plugins/autolink/plugin.min.js" />
+      <file name="/umbraco/lib/tinymce/plugins/directionality/plugin.min.js" />
+      <file name="/umbraco/lib/tinymce/plugins/tabfocus/plugin.min.js" />
+      <file name="/umbraco/lib/tinymce/plugins/searchreplace/plugin.min.js" />
+      <file name="/umbraco/lib/tinymce/plugins/fullscreen/plugin.min.js" />
+      <file name="/umbraco/lib/tinymce/plugins/noneditable/plugin.min.js" />
+    </files>
+  </item>
+  <item key="L3VtYnJhY28vYXNzZXRzL2Nzcy9jYW52YXNkZXNpZ25lci5jc3M7" file="c:\Users\punki\Desktop\Umbraco Website\App_Data\TEMP\ClientDependency\1_0192044a85e34438bd0415b6557e6082.cdC" compression="gzip" version="1">
+    <files>
+      <file name="/umbraco/assets/css/canvasdesigner.css" />
+    </files>
+  </item>
+  <item key="L3VtYnJhY28vbGliL2pxdWVyeS9qcXVlcnkubWluLmpzOy91bWJyYWNvL2xpYi9hbmd1bGFyL2FuZ3VsYXIuanM7L3VtYnJhY28vbGliL3VuZGVyc2NvcmUvdW5kZXJzY29yZS1taW4uanM7L3VtYnJhY28vbGliL3VtYnJhY28vRXh0ZW5zaW9ucy5qczsvdW1icmFjby9qcy91dGlsaXRpZXMuanM7L3VtYnJhY28vanMvYXBwLmpzOy91bWJyYWNvL2pzL3VtYnJhY28ucmVzb3VyY2VzLmpzOy91bWJyYWNvL2pzL3VtYnJhY28uc2VydmljZXMuanM7L3VtYnJhY28vanMvdW1icmFjby5pbnRlcmNlcHRvcnMuanM7" file="c:\Users\punki\Desktop\Umbraco Website\App_Data\TEMP\ClientDependency\1_024c18c2795241a8a188ca7081265afc.cdJ" compression="gzip" version="1">
+    <files>
+      <file name="/umbraco/lib/jquery/jquery.min.js" />
+      <file name="/umbraco/lib/angular/angular.js" />
+      <file name="/umbraco/lib/underscore/underscore-min.js" />
+      <file name="/umbraco/lib/umbraco/Extensions.js" />
+      <file name="/umbraco/js/utilities.js" />
+      <file name="/umbraco/js/app.js" />
+      <file name="/umbraco/js/umbraco.resources.js" />
+      <file name="/umbraco/js/umbraco.services.js" />
+      <file name="/umbraco/js/umbraco.interceptors.js" />
+    </files>
+  </item>
+  <item key="L3VtYnJhY28vbGliL3NpZ25hbHIvanF1ZXJ5LnNpZ25hbFIuanM7" file="c:\Users\punki\Desktop\Umbraco Website\App_Data\TEMP\ClientDependency\1_707f5f7e8b2148cba36fc87578c6c8a7.cdJ" compression="gzip" version="1">
+    <files>
+      <file name="/umbraco/lib/signalr/jquery.signalR.js" />
+    </files>
+  </item>
+  <item key="L3VtYnJhY28vanMvdW1icmFjby5wcmV2aWV3LmpzOw" file="c:\Users\punki\Desktop\Umbraco Website\App_Data\TEMP\ClientDependency\1_62efee605bef4980a447ec17dfc182f3.cdJ" compression="gzip" version="1">
+    <files>
+      <file name="/umbraco/js/umbraco.preview.js" />
+    </files>
+  </item>
+  <item key="L1NjcmlwdHMvRHJvcGRvd25Ib3Zlci5qczs" file="c:\Users\punki\Desktop\Umbraco Website\App_Data\TEMP\ClientDependency\1_6854d48e036a40128609224370de797f.cdJ" compression="gzip" version="1">
+    <files>
+      <file name="/Scripts/DropdownHover.js" />
+    </files>
+  </item>
+  <item key="L2Nzcy9tYWluLmNzczs" file="c:\Users\punki\Desktop\Umbraco Website\App_Data\TEMP\ClientDependency\1_71f9091b4adc445b9a292b31186304ce.cdC" compression="gzip" version="1">
+    <files>
+      <file name="/css/main.css" />
+    </files>
+  </item>
+  <item key="L2Nzcy9jc3MvYm9vdHN0cmFwLmNzczsvY3NzL21haW4uY3NzOw" file="c:\Users\punki\Desktop\Umbraco Website\App_Data\TEMP\ClientDependency\1_196158e76ad4479997f39a9ac940237c.cdC" compression="gzip" version="1">
+    <files>
+      <file name="/css/css/bootstrap.css" />
+      <file name="/css/main.css" />
+    </files>
+  </item>
+  <item key="L3NjcmlwdHMvYm9vdHN0cmFwLmJ1bmRsZS5qczs" file="c:\Users\punki\Desktop\Umbraco Website\App_Data\TEMP\ClientDependency\1_3b06e0c6517442898f2fb0072bd163af.cdJ" compression="gzip" version="1">
+    <files>
+      <file name="/scripts/bootstrap.bundle.js" />
+    </files>
+  </item>
+  <item key="L2Nzcy9ib290c3RyYXAuY3NzOy9jc3MvbWFpbi5jc3M7" file="c:\Users\punki\Desktop\Umbraco Website\App_Data\TEMP\ClientDependency\1_9aac36fef5124f3bb90cfffb96f68bb2.cdC" compression="gzip" version="1">
+    <files>
+      <file name="/css/main.css" />
+    </files>
+  </item>
+  <item key="L3NjcmlwdHMvYm9vdHN0cmFwLmpzOw" file="c:\Users\punki\Desktop\Umbraco Website\App_Data\TEMP\ClientDependency\1_359c362c2d914eff813146956cc05593.cdJ" compression="gzip" version="1">
+    <files>
+      <file name="/scripts/bootstrap.js" />
+    </files>
+  </item>
+  <item key="L2Nzcy9jc3MvYm9vdHN0cmFwLmNzczs" file="c:\Users\punki\Desktop\Umbraco Website\App_Data\TEMP\ClientDependency\1_308b2ed135cc4ff896b884f71b3763fd.cdC" compression="gzip" version="1">
+    <files>
+      <file name="/css/css/bootstrap.css" />
+    </files>
+  </item>
+  <item key="L3NjcmlwdHMvYm9vdHN0cmFwLmpzOy9zY3JpcHRzL2Jvb3RzdHJhcC5taW4uanM7" file="c:\Users\punki\Desktop\Umbraco Website\App_Data\TEMP\ClientDependency\1_9e0ca467c0e84cccbdf94eddf8e88f51.cdJ" compression="gzip" version="1">
+    <files>
+      <file name="/scripts/bootstrap.js" />
+      <file name="/scripts/bootstrap.min.js" />
+    </files>
+  </item>
+  <item key="L2Nzcy9jc3MvYm9vdHN0cmFwLmNzczsvY3NzL2Nzcy9ib290c3RyYXAubWluLmNzczs" file="c:\Users\punki\Desktop\Umbraco Website\App_Data\TEMP\ClientDependency\1_dce3f4b9884d48c2a6dd77e8546dd165.cdC" compression="gzip" version="1">
+    <files>
+      <file name="/css/css/bootstrap.css" />
+      <file name="/css/css/bootstrap.min.css" />
+    </files>
+  </item>
+  <item key="L2Nzcy9jc3MvYm9vdHN0cmFwLmNzczsvY3NzL2Nzcy9ib290c3RyYXAubWluLmNzczsvY3NzL21haW5zLmNzczs" file="c:\Users\punki\Desktop\Umbraco Website\App_Data\TEMP\ClientDependency\1_e432d87eec2242f5996c2bdf7b8f13ee.cdC" compression="gzip" version="1">
+    <files>
+      <file name="/css/css/bootstrap.css" />
+      <file name="/css/css/bootstrap.min.css" />
+    </files>
+  </item>
+  <item key="L3NjcmlwdHMvYm9vdHN0cmFwLm1pbi5qczsvc2NyaXB0cy9ib290c3RyYXAuanM7" file="c:\Users\punki\Desktop\Umbraco Website\App_Data\TEMP\ClientDependency\1_747ce668e8a84612a826846cd17ce8dc.cdJ" compression="gzip" version="1">
+    <files>
+      <file name="/scripts/bootstrap.min.js" />
+      <file name="/scripts/bootstrap.js" />
+    </files>
+  </item>
+  <item key="L2Nzcy9tYWlucy5jc3M7L2Nzcy9jc3MvYm9vdHN0cmFwLmNzczsvY3NzL2Nzcy9ib290c3RyYXAubWluLmNzczs" file="c:\Users\punki\Desktop\Umbraco Website\App_Data\TEMP\ClientDependency\1_a431de5ae26e402f9e31b1c3bef6a09d.cdC" compression="gzip" version="1">
+    <files>
+      <file name="/css/css/bootstrap.css" />
+      <file name="/css/css/bootstrap.min.css" />
+    </files>
+  </item>
+  <item key="L2Nzcy9tYWluLmNzczsvY3NzL2Nzcy9ib290c3RyYXAuY3NzOy9jc3MvY3NzL2Jvb3RzdHJhcC5taW4uY3NzOw" file="c:\Users\punki\Desktop\Umbraco Website\App_Data\TEMP\ClientDependency\1_bbb6bd82ff474aacbf25363bedd5628c.cdC" compression="gzip" version="1">
+    <files>
+      <file name="/css/main.css" />
+      <file name="/css/css/bootstrap.css" />
+      <file name="/css/css/bootstrap.min.css" />
+    </files>
+  </item>
+  <item key="L2Nzcy9jc3MvYm9vdHN0cmFwLmNzczsvY3NzL2Nzcy9ib290c3RyYXAubWluLmNzczsvY3NzL21haW4uY3NzOw" file="c:\Users\punki\Desktop\Umbraco Website\App_Data\TEMP\ClientDependency\1_10855f68bf3e42228364a8949ad5808f.cdC" compression="gzip" version="1">
+    <files>
+      <file name="/css/css/bootstrap.css" />
+      <file name="/css/css/bootstrap.min.css" />
+      <file name="/css/main.css" />
+    </files>
+  </item>
+</map>
